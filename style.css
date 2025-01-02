@@ -1,0 +1,457 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  /* background-image: url('img/footer-bkg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  background-color: purple;
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  height: 190vh;
+  width: auto;
+}
+
+/* Navbar Styles */
+header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 20px;
+  height: 58px;
+  width: auto;
+}
+
+nav .logo a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+nav ul.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav ul.nav-links li {
+  margin: 0 15px;
+}
+
+nav ul.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul.nav-links li a:hover {
+  color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+  /* background: url('https://via.placeholder.com/1920x800?text=Gym+Background') no-repeat center center/cover; */
+  background-image: url('img/bg.jpg');
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat; 
+  border: 2px;
+  border-color: purple;
+  height: 90vh;  /*Ensures the body takes up full screen height */
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  /* padding: 100px 0; */
+}
+
+.hero-text{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  width: auto;
+  padding: 4px;
+  height: 100vh;
+  margin-left: 7px;
+  text-align: center;
+
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+.hero .cta-button {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 15px 25px;
+  margin-right: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+  background-color: #e67e22;
+}
+
+/* About Section */
+.about {
+  padding: 14px 10px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.head {
+  text-align: center;
+  font-size:  30px;
+}
+
+.secbod {
+  background-image: url('img/footer-bkg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px;
+  border-color: purple;
+  height: fit-content;
+  width: auto;
+}
+
+.nav {
+  color: rgb(66, 221, 5);
+  display: flex;
+  padding-top: 4%;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center ;
+  /* height: 250px; */
+  width: auto;
+  font-size: 30px;
+  color: white;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 85%;
+  max-height: 100%;
+  padding: 35px;
+  list-style: none;
+}
+.fitem{
+  padding: 2px;
+  text-align: center;
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  padding-left: 35px;
+  padding-top: 10px;
+}
+ footer a{
+  color: white;
+  padding: 20px;
+  padding-left: 40px;
+  padding-bottom: 2px;
+  padding-top: 12px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+.footer-it{
+      display: flex;
+      flex-wrap: wrap ;
+      justify-content: space-between ;
+      padding: auto;
+      margin: auto;
+}
+.footer-item{
+  display: table-row-group;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.section1 {
+  padding: 16px;
+  text-align: center;
+}
+.section2 {
+  padding: 16px;
+  text-align: center;
+}
+
+.section2 h1{
+  font-size: 40px;
+  opacity: 0.5;
+}
+
+/* Scrollable Info Bar */
+.info-bar {
+  background-color: #00000000;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  white-space: nowrap;  /* Prevent text wrapping */
+  overflow: hidden;     /* Hide text outside the box */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Each paragraph item in the info bar */
+.info-bar p {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 30px;  /* Space between the items */
+  margin-left: 30px;
+  animation: scroll 15s linear infinite;  /* Animation for scrolling */
+}
+
+/* Keyframes for scrolling */
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);  /* Start off-screen to the right */
+  }
+  100% {
+      transform: translateX(-150%); /* End off-screen to the left */
+  }
+}
+
+.section3 {
+  background-image: url('img/gallery-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 280px;
+  width: auto;
+  border-radius: 30px;
+  /* border: 1px solid purple; */
+  padding: 16px;
+  text-align: center;
+}
+
+.section3 h1{
+  font-size: 40px;
+}
+
+.section3 p {
+  font-size: 25px;
+  opacity: 0.4;
+}
+
+.section4 {
+  padding: 16px;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Section Styles */
+.pricing-section {
+  /* background-color: #ffffff00; */
+  padding: 60px 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* Plan Styling */
+.plan {
+  /* background-color: #f9f9f9; */
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.plan h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2ecc71;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #14086e;
+}
+
+/* Hover Effect for Plans */
+.plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Plan Variations */
+#basic-plan {
+  border: 1px solid #2ecc71;
+  border-left: 5px solid #2ecc71;
+}
+
+#standard-plan {
+  border: 1px solid #3498db;
+  border-left: 5px solid #3498db;
+}
+
+#premium-plan {
+  border: 1px solid #f39c12;
+  border-left: 5px solid #f39c12;
+}
+
+/* Media Query for Responsiveness */
+
+.section5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;  /* Space between images */
+  padding: 16px;
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+}
+
+/* Individual image items */
+.img {
+  width: 30%; /* Each image will take 24% of the container width */
+  height: 35vh; /* Fixed height for the images */
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for the images */
+}
+
+/* Example image links with CSS background-image */
+  #imag1 {
+  background-image: url('img/butig.jpg');
+}
+#imag2 {
+  background-image: url('img/cardio-boxing-class-columbia.jpg');
+}
+#imag3 {
+  background-image: url('img/team-lea-683x1024.jpg');
+}
+#imag4 {
+  background-image: url('img/emo-guy.jpg');
+}
+#imag5 {
+  background-image: url('img/white-guy.jpg');
+}
+#imag6 {
+  background-image: url('img/guy.jpg');
+}
+/* Optional hover effect */
+.img:hover {
+  transform: scale(1.05);  /* Slight zoom effect */
+  transition: transform 0.8s ease;
+}
+
+  /* Media Query for small screens */
+  @media  (max-width: 768px) {
+    .img {
+      width: 48%; /* 2 items per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .img {
+      width: 100%; /* 1 item per row on small screens */
+    }
+    .section3{
+      font-size: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .plan {
+        margin: 20px auto;
+        width: 80%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .nav-links {
+      width: 0%;
+      height: auto;
+      font-size: 1px;
+    }
+  }
