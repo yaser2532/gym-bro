@@ -427,13 +427,13 @@ ul li {
 }
 
   /* Media Query for small screens */
-  @media  (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .img {
       width: 48%; /* 2 items per row on medium screens */
     }
   }
   
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .img {
       width: 100%; /* 1 item per row on small screens */
     }
@@ -442,7 +442,7 @@ ul li {
     }
   }
   
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .plan {
         margin: 20px auto;
         width: 80%;
