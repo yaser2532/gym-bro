@@ -14,7 +14,7 @@ body {
 
 /* Navbar Styles */
 header {
-  background-image: linear-gradient(-90deg,black,gray,white );
+  background-image: linear-gradient(-90deg,black,rgb(75, 75, 75),white );
   color: #ffffff;
   height: 50px;
   padding: 2px 0;
